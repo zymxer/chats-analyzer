@@ -41,8 +41,9 @@ class ChatParser(ABC):
         return merged_messages
 
     def _within_time_limit(self, date1: datetime, date2: datetime, limit_sec: int) -> bool:
-        diff = date2 - date1
-        return diff.total_seconds() < limit_sec
+        return True
+        #diff = date2 - date1
+        #return diff.total_seconds() < limit_sec
 
     def clean_text(self, text: str) -> str:
         text = re.sub(r'[\t\n\r\f\v]+', ' ', text)

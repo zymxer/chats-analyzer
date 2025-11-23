@@ -1,5 +1,6 @@
 fastapi
 uvicorn
+fastcoref
 emoji
 python-multipart
 spacy
