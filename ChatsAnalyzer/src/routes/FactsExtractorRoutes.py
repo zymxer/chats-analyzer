@@ -41,4 +41,4 @@ def extract_facts_from_str(
 def set_object_dependencies_depth(
         depth: ObjectDependenciesFactDepth
 ):
-    FactsExtractor.object_dependencies_depth = depth.value
+    FactsExtractor.object_dependencies_depth = depth
